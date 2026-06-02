@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>简单美食</title>
+    <style>
+        /* 极简风格 - 干净整洁 */
+        body {
+            font-family: system-ui, -apple-system, 'Segoe UI', Roboto, sans-serif;
+            background: #fefaf5;
+            margin: 0;
+            padding: 24px 16px;
+            color: #2c2c2c;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+        h1 {
+            font-size: 2rem;
+            font-weight: 500;
+            text-align: center;
+            color: #c25b2c;
+            margin: 0 0 8px 0;
+        }
+        .sub {
+            text-align: center;
+            color: #9b7b5c;
+            margin-bottom: 32px;
+            font-size: 0.9rem;
+        }
+        /* 网格布局 */
+        .food-grid {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 24px;
+            justify-content: center;
+        }
+        /* 卡片极简 */
+        .card {
+            background: white;
+            border-radius: 20px;
+            overflow: hidden;
+            width: 280px;
+            box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+            transition: 0.2s;
+            border: 1px solid #f0e2d4;
+        }
+        .card:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+        }
+        .card-img {
+            width: 100%;
+            height: 180px;
+            background-color: #f2e3d6;
+            background-size: cover;
+            background-position: center;
+        }
+        .card-content {
+            padding: 16px 18px 20px;
+        }
+        .card-title {
+            font-size: 1.4rem;
+            font-weight: 600;
+            margin: 0 0 6px 0;
+            color: #3e2c1c;
+        }
+        .card-desc {
+            font-size: 0.85rem;
+            color: #6a5a48;
+            margin: 0 0 12px 0;
+            line-height: 1.4;
+        }
+        .price {
+            font-weight: 600;
+            color: #cf7c3a;
+            font-size: 1.1rem;
+        }
+        footer {
+            text-align: center;
+            margin-top: 48px;
+            font-size: 0.75rem;
+            color: #bc8f64;
+            border-top: 1px solid #f0e2d4;
+            padding-top: 20px;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <h1>🍜 简单美食</h1>
+    <div class="sub">家常 · 温暖 · 好味道</div>
+
+    <div class="food-grid">
+        <!-- 美食1 -->
+        <div class="card">
+            <div class="card-img" style="background-image: url('https://picsum.photos/id/127/400/240');"></div>
+            <div class="card-content">
+                <div class="card-title">番茄肉酱意面</div>
+                <div class="card-desc">浓郁茄汁，肉酱醇厚，经典美味。</div>
+                <div class="price">¥38</div>
+            </div>
+        </div>
+
+        <!-- 美食2 -->
+        <div class="card">
+            <div class="card-img" style="background-image: url('https://picsum.photos/id/108/400/240');"></div>
+            <div class="card-content">
+                <div class="card-title">照烧鸡腿饭</div>
+                <div class="card-desc">嫩滑鸡腿，照烧酱汁，一碗满足。</div>
+                <div class="price">¥42</div>
+            </div>
+        </div>
+
+        <!-- 美食3 -->
+        <div class="card">
+            <div class="card-img" style="background-image: url('https://picsum.photos/id/162/400/240');"></div>
+            <div class="card-content">
+                <div class="card-title">牛油果鲜虾沙拉</div>
+                <div class="card-desc">清新低卡，虾仁弹牙，轻盈之选。</div>
+                <div class="price">¥45</div>
+            </div>
+        </div>
+    </div>
+
+    <footer>美味源于简单食材 · 享受每一餐</footer>
+</div>
+</body>
+</html>
